@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+    <style>
+        #loading,
+        #results {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -40,9 +46,9 @@
                         </div>
                     </form>
                     <!-- Loader -->
-                    <!-- <div id="loading">
+                    <div id="loading">
                         <img src="img/loading.gif" alt="loadingImage">
-                    </div> -->
+                    </div>
                     <!-- RESULTS -->
                     <div id="results" class="pt-4">
                         <h5>Results</h5>
@@ -53,11 +59,11 @@
                             </div>
                             <div class="input-group pb-3">
                                 <span class="input-group-addon">Total Payment</span>
-                                <input type="number" class="form-control" id="Total-payment" disabled>
+                                <input type="number" class="form-control" id="total-payment" disabled>
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon">Total Interest</span>
-                                <input type="number" class="form-control" id="Total-interest" disabled>
+                                <input type="number" class="form-control" id="total-interest" disabled>
                             </div>
                         </div>
                     </div>
